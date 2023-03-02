@@ -85,6 +85,16 @@ def verifica_fibonacci(num):
         return True
     else:
         return False
+def verifica_fibonacci(num):
+    """
+    Função que recebe um número n e calcula a sequência de Fibonacci até n.
+    """
+    fibonacci = [0, 1]
+    while fibonacci[-1] < n:
+        fibonacci.append(fibonacci[-1] + fibonacci[-2])
+    if fibonacci[-1] > n:
+        fibonacci.pop()
+    return fibonacci
 
 # Exemplo de uso:
 num = int(input("Digite um número: "))
@@ -100,7 +110,7 @@ utilizando um loop while para calcular a sequência até que um valor igual ou m
 A função calcula_fibonacci recebe um número n e retorna uma lista com a sequência de Fibonacci até n.
 
 No exemplo de uso, o usuário informa um número, a sequência de Fibonacci é calculada até esse número e então é verificado se o número informado 
-pertence à sequência ou não. É importante notar que a função calcula_fibonacci calcula a sequência até um valor maior ou igual ao número informado, para 
+pertence à sequência ou não. É importante notar que a função verifica_fibonacci calcula a sequência até um valor maior ou igual ao número informado, para 
 garantir que a sequência esteja completa até esse valor e possa ser verificada corretamente.
 
 ---
