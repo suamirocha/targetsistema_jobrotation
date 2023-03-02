@@ -81,37 +81,20 @@ def verifica_fibonacci(num):
     a, b = 0, 1
     while b < num:
         a, b = b, a + b
-    if b == num:
-        return True
-    else:
-        return False
-def verifica_fibonacci(num):
-    """
-    Função que recebe um número n e calcula a sequência de Fibonacci até n.
-    """
-    fibonacci = [0, 1]
-    while fibonacci[-1] < n:
-        fibonacci.append(fibonacci[-1] + fibonacci[-2])
-    if fibonacci[-1] > n:
-        fibonacci.pop()
-    return fibonacci
+    return b == num
 
 # Exemplo de uso:
 num = int(input("Digite um número: "))
-fibonacci = calcula_fibonacci(num)
+fibonacci = verifica_fibonacci(num)
 if num in fibonacci:
     print(f"O número {num} pertence à sequência de Fibonacci!")
 else:
     print(f"O número {num} não pertence à sequência de Fibonacci.")
 ```    
     
-Explicando o código: a função verifica_fibonacci recebe um número e verifica se ele pertence à sequência de Fibonacci, 
-utilizando um loop while para calcular a sequência até que um valor igual ou maior ao número informado seja encontrado. 
-A função calcula_fibonacci recebe um número n e retorna uma lista com a sequência de Fibonacci até n.
+Explicando o código: a função verifica_fibonacci recebe um número e verifica se ele pertence à sequência de Fibonacci, utilizando um loop while para calcular a sequência até que um valor igual ou maior ao número informado seja encontrado. Ao chegar nessa condição, o loop é interrompido e o valor de b é comparado ao número informado. Se forem iguais, o número pertence à sequência de Fibonacci, caso contrário, não pertence.
 
-No exemplo de uso, o usuário informa um número, a sequência de Fibonacci é calculada até esse número e então é verificado se o número informado 
-pertence à sequência ou não. É importante notar que a função verifica_fibonacci calcula a sequência até um valor maior ou igual ao número informado, para 
-garantir que a sequência esteja completa até esse valor e possa ser verificada corretamente.
+No exemplo de uso, o usuário informa um número, a sequência de Fibonacci é calculada até esse número e então é verificado se o número informado pertence à sequência ou não. É importante notar que a função verifica_fibonacci calcula a sequência até um valor maior ou igual ao número informado, para garantir que a sequência esteja completa até esse valor e possa ser verificada corretamente.
 
 ---
 
