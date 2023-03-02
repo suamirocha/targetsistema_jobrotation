@@ -74,36 +74,25 @@ Esse número pode ser informado através de qualquer entrada de sua preferência
 
 ### Resolução:
 ```
-programa{
-  
-  funcao inicio(){
-    inteiro a = 0, b = 1, c = 0, n, contador = 2
+def verifica_fibonacci(num):
+    """
+    Função que recebe um número e verifica se ele pertence à sequência de Fibonacci.
+    """
+    a, b = 0, 1
+    while b < num:
+        a, b = b, a + b
+    if b == num:
+        return True
+    else:
+        return False
 
-    faca{
-      escreva("Qual número deseja calcular? ")
-      leia(n)
-    }enquanto(n < 1)
-
-    se(n == 1){
-      escreva("0\n")
-    }
-    senao{
-      se(n == 2){
-        escreva("1\n")
-      }
-      senao{
-        enquanto(contador < n){
-          c = a + b
-          a = b
-          b = c
-          contador++
-          escreva(c, ", ")
-        }
-        escreva("\nO ", n, "º termo é: ", c, "\n")
-      }
-    }
-  }
-}
+# Exemplo de uso:
+num = int(input("Digite um número: "))
+fibonacci = calcula_fibonacci(num)
+if num in fibonacci:
+    print(f"O número {num} pertence à sequência de Fibonacci!")
+else:
+    print(f"O número {num} não pertence à sequência de Fibonacci.")
 ```    
     
 Explicando o código: a função verifica_fibonacci recebe um número e verifica se ele pertence à sequência de Fibonacci, 
