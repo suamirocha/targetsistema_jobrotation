@@ -120,7 +120,7 @@ b) 128
 c) 49
 d) 100
 e) 13
-f) 20
+f) 200
 
 ---
 
@@ -129,38 +129,7 @@ Franca, a uma velocidade constante de 110 km/h e o caminhão de Franca em direç
 cruzarem na rodovia, qual estará mais próximo a cidade de Ribeirão Preto?
 
 ### Resolução:
-Para resolver esse problema, podemos usar a fórmula:
 
-tempo = distância / velocidade
-
-Onde tempo é o tempo que cada veículo leva para percorrer a distância entre as duas cidades e a velocidade é a velocidade constante de cada veículo.
-
-Vamos começar calculando o tempo que o carro leva para percorrer a distância de 100 km:
-
-tempo_carro = distância / velocidade_carro
-tempo_carro = 100 km / 110 km/h
-tempo_carro = 0,91 horas
-
-Agora vamos calcular o tempo que o caminhão leva para percorrer a mesma distância, levando em consideração os pedágios:
-
-tempo_caminhão = (distância / velocidade_caminhão) + (tempo_pedágio * número_pedágios)
-tempo_caminhão = (100 km / 80 km/h) + (0,0833 horas * 2)
-tempo_caminhão = 1,25 horas
-
-Onde o tempo_pedágio é o tempo que o caminhão leva para passar por cada pedágio (5 minutos ou 0,0833 horas) e o número_pedágios é o número de pedágios no caminho (2).
-
-Agora podemos calcular onde os dois veículos se encontram, usando a fórmula:
-
-distância_carro = velocidade_carro * tempo_carro
-distância_carro = 110 km/h * 0,91 horas
-distância_carro = 100 km
-
-distância_caminhão = velocidade_caminhão * tempo_caminhão
-distância_caminhão = 80 km/h * 1,25 horas
-distância_caminhão = 100 km
-
-Podemos ver que ambos os veículos percorrem a mesma distância até o ponto de encontro, que fica 
-exatamente no meio do caminho entre as duas cidades. Portanto, eles estão igualmente distantes de Ribeirão Preto no momento do encontro.
 
 - 5  Escreva um programa que inverta os caracteres de um string.
 
